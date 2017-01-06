@@ -18,9 +18,9 @@ our $scenario = {
             result_is_list => 1,
         },
 
-        #{
-        #    fcall_template => 'Math::Prime::Util::erat_primes(2,<num>)',
-        #},
+        {
+            fcall_template => 'Math::Prime::Util::erat_primes(2,<num>)',
+        },
 
         {
             module => 'Math::Prime::FastSieve',
