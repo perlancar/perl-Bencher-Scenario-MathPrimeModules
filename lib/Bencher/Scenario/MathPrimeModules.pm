@@ -13,18 +13,21 @@ our $scenario = {
     },
     participants => [
         {
-            fcall_template => 'Acme::PERLANCAR::Prime::primes(<num>)',
+            module => 'Acme::PERLANCAR::Prime',
+            code_template => 'Acme::PERLANCAR::Prime::_empty_cache(); Acme::PERLANCAR::Prime::primes(<num>)',
             result_is_list => 1,
         },
+
         {
             fcall_template => 'Math::Prime::Util::primes(<num>)',
         },
-        # still can't get it to work
-        #{
-        #    module => 'Math::Prime::FastSieve',
-        #    function => 'primes',
-        #    code_template => 'use Math::Prime::FastSieve; my $sieve = Math::Prime::FastSieve::Sieve->new(<num>); $sieve->primes(<num>)',
-        #},
+
+        {
+            module => 'Math::Prime::FastSieve',
+            function => 'primes',
+            code_template => 'Math::Prime::FastSieve->import(); Inline->init(); my $sieve = Math::Prime::FastSieve::Sieve->new(<num>); $sieve->primes(<num>)',
+        },
+
         {
             fcall_template => 'Math::Prime::XS::primes(<num>)',
             result_is_list => 1,
