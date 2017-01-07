@@ -1,5 +1,3 @@
-Revision history for Bencher-Scenario-MathPrimeModules
-
 0.002   2017-01-06 (PERLANCAR)
 
         - Enable Math::Prime::FastSieve [GH#1], thanks DANAJ.
