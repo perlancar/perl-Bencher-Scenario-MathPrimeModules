@@ -1,4 +1,4 @@
-0.004   2017-01-25 (PERLANCAR)
+0.004   2017-01-25  Released-By: PERLANCAR
 
 	- No functional changes.
 
@@ -7,7 +7,7 @@
           type=x_benchmarks.
 
 
-0.003   2017-01-25 (PERLANCAR)
+0.003   2017-01-25  Released-By: PERLANCAR
 
 	- No functional changes.
 
@@ -16,7 +16,7 @@
           type=x_benchmarks.
 
 
-0.002   2017-01-06 (PERLANCAR)
+0.002   2017-01-06  Released-By: PERLANCAR
 
         - Enable Math::Prime::FastSieve [GH#1], thanks DANAJ.
 
@@ -25,6 +25,6 @@
           DANAJ.
 
 
-0.001   2016-09-23 (PERLANCAR)
+0.001   2016-09-23  Released-By: PERLANCAR
 
         - First release.
